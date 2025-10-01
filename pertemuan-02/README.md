@@ -2,4 +2,4 @@
 NIM : 2511500006
 NAMA : Grezelco Govin
 
-Hari ini rabu 01.oktober.2025
+Hari ini, rabu 01.oktober.2025 saya mempelajari

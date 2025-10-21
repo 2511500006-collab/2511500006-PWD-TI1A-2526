@@ -1,0 +1,9 @@
+# Pertemuan-04
+
+NIM : 2511500006<br>
+NAMA : Grezelco Govin<br>
+
+Hari ini, rabu 01.oktober.2025 saya mempelajari:
+<ol>
+    <li>copy-paste isi index.html (pertemuan-03) ke index.html (pertemuan-04)</li>
+</ol>

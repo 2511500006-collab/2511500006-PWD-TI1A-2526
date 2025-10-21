@@ -78,20 +78,17 @@
     font-weight: bold;
     }
 
-    #contact input,
-    #contact textarea {
-        flex: 1;
-        border: 1px solid #ccc;
-        border-radius: 6px;
-        padding: 8px;
-        color: #f30b0b;
-        font-weight: normal;
-        margin: 0;
-        box-sizing: border-box;
+    #contact button[type="submit"]:hover {
+        background-color: #067100;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     }
 
+    #contact button[type="reset"]:hover {
+        background-color: #7f0000;
+        transform: translateY(-1px);
+    }
     
-
     #contact input[type="text"],
     #contact input[type="email"],
     #contact textarea {

@@ -123,7 +123,7 @@
         .bg{
             position: fixed;
             inset: 0;
-            z-index: -1;
+            z-index: -2; /* fallback di bawah iframe */
             background-image: var(--bg);
             background-size: 140% 140%;
             background-position: 0% 50%;
@@ -131,6 +131,20 @@
             filter: brightness(0.9) saturate(0.95);
             animation: pan 20s linear infinite;
             pointer-events: none; /* jangan ganggu klik */
+        }
+
+        /* Iframe background (mencoba embed Steam Workshop). Jika diblokir, iframe akan disembunyikan
+           dan fallback .bg tetap terlihat. */
+        .bg-iframe{
+            position: fixed;
+            inset: 0;
+            z-index: -1; /* di atas .bg */
+            width: 100%;
+            height: 100%;
+            border: none;
+            pointer-events: none; /* jangan ganggu klik */
+            opacity: 0.98;
+            background: transparent;
         }
 
         @keyframes pan{
@@ -152,8 +166,10 @@
   </style>
 </head>
 <body>
-        <!-- Background bergerak: ganti URL di atribut style di bawah -->
-        <div class="bg" style="--bg: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1950&q=80');"></div>
+    <!-- Background bergerak: ganti URL di atribut style di bawah -->
+    <div class="bg" style="--bg: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1950&q=80');"></div>
+    <!-- Coba sematkan halaman Steam Workshop sebagai background (sering diblokir oleh Steam/CSP) -->
+    <iframe class="bg-iframe" id="bgSteam" src="https://steamcommunity.com/sharedfiles/filedetails/?id=3459506773" title="Steam Workshop"></iframe>
 
     <header>
         <h1>Ini Header
@@ -206,5 +222,29 @@
      <footer>
       <p>&copy; 2025 Grezelco Govin [2511500006]
      </footer>
+    <script>
+        // Jika iframe gagal load karena kebijakan embedding, sembunyikan iframe setelah timeout
+        (function(){
+            var iframe = document.getElementById('bgSteam');
+            var hidden = false;
+            // Jika iframe tidak mengirimkan load event dalam 3 detik, sembunyikan
+            var t = setTimeout(function(){
+                try{
+                    // Coba akses kontenDocument untuk mendeteksi jika diblokir
+                    var doc = iframe.contentDocument || iframe.contentWindow.document;
+                    // Jika berhasil mengakses, kita anggap embed berhasil
+                }catch(e){
+                    iframe.style.display = 'none';
+                    hidden = true;
+                }
+            }, 3000);
+
+            iframe.addEventListener('load', function(){
+                // load event diterima; tetap tampil. Namun beberapa server men-trigger load meski kosong.
+                clearTimeout(t);
+                // Jika src membalas dengan top-level redirect, browser mungkin menutupnya; biarkan.
+            });
+        })();
+    </script>
 </body>
 </html>

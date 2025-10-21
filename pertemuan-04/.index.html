@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHS | SIAM Atma Luhur</title>
+    <style>
+    #about {
+    background: linear-gradient(135deg, #b3e0ff 0%, #ffffff 100%);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 700px;
+    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+        
+    #about h2 {
+      color: #000000;
+      border-bottom: 2px solid #003366;
+      padding-bottom: 6px;
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+
+    #about p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin: 0;
+    padding: 6px 0;
+    border-bottom: 1px solid #e6e6e6;
+    }
+
+    #about strong {
+        min-width: 180px;
+        color: #003366;
+        font-weight: 600;
+        text-align: right;
+        padding-right: 16px;
+        flex-shrink: 0;
+    }
+
+    @media (max-width: 600px) {
+        #about p {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        #about strong {
+            text-align: left;
+            padding-right: 0;
+            margin-bottom: 2px;
+        }
+    }
+
+    #contact {
+    background: linear-gradient(135deg, #b3e0ff 0%, #ffffff 100%);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 700px;
+    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    #contact h2 {
+        text-align: center;
+        color: #004d40
+        margin-top: 0;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #004d40;
+        padding-bottom: 10px;
+    }
+
+    #contact label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #004d40;
+    font-weight: bold;
+    }
+
+    #contact input[type="text"],
+    #contact input[type="email"],
+    #contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    }
+
+    #contact .form-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    }
+
+    #contact button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    }
+
+    #contact input,
+    #contact textarea,
+    #contact button {
+        width:100%;
+    }
+
+    #contact button[type="submit"] {
+        background-color: #4CAF50;
+    }
+
+    #contact button[type="reset"] {
+        background-color: #ed2828;
+    }
+    
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Ini Header
+        <nav>
+            <ul>
+                <li><a href="home">beranda</a></li>
+                <li><a href="about">tentang</a></li>
+                <li><a href="contact">kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+         <h2>Selamat datang teman-teman</h2>
+         <p>Ini Contoh Paragraf HTML.</p>
+        </section>
+        <section id="about">
+            <h2>Tentang saya</h2>
+            <p><strong>NIM:</strong> 2511500006</p>
+            <p><strong>Nama Lengkap:</strong> Grezelco Govin &#128512;</p>
+            <p><strong>Tempat Lahir:</strong> Bedukang</p>
+            <p><strong>Tanggal Lahir:</strong> 27 September 2007</p>
+            <p><strong>Hobi:</strong> Badminton dan main Game</p>
+            <p><strong>Pasangan:</strong> Blum ada &#128546;</p>
+            <p><strong>Anak ke brp:</strong> Anak kedua dari Dua Bersaudara</p>
+            <p><strong>Nama Kakak:</strong> viorent</p>
+            <p><strong>Minum Kesukaan:</strong> Matcha &#128525;</p>
+            <p><strong>sekian dan terimakasih :D</strong>
+        </section>
+        <section id="contact">
+            <h2>~~Kontak kami~~</h2>
+            
+           <form action="" method="GET">
+            <label for="txtNama">Nama:</label>
+            <input type="text" id="txtNama" name="txtnama" placeholder="Masukan nama" required autocomplate="name">
+            
+            <label for="txtEmail">Email:</label>
+            <input type="email" id="txtNama" name="txtnama" placeholder="Masukan email" required autocomplate="email">
+            
+            <label for="txtPesan">Pesan:</label>
+            <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
+
+            <div class="form-buttons">
+            <button type="submit">Kirim</button>
+            <button type="reset">Batal</button>
+            </div>
+        </form>
+    </section>
+</main>
+     <footer>
+      <p>&copy; 2025 Grezelco Govin [2511500006]
+     </footer>
+</body>
+</html>

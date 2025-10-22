@@ -1,3 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
-document.querySelector("nav").classList.toggle("active");
+document.getElementById("menuToggle").addEventListener("click", function () {
+	document.querySelector("nav").classList.toggle("active");
 });

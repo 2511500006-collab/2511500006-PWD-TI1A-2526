@@ -81,7 +81,7 @@
 
     .menu-toggle {
         display: none;
-        background::none;
+        background:none;
         border: none;
         color: #fff;
         font-size: 28px;

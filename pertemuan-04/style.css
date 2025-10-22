@@ -78,7 +78,17 @@
         background-color: #cc04a1;
         transform: translate(1px);
     }
-    
+
+    @media (max-width: 600px) {
+        header{
+            padding: 16px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+    }
+
+
     #about {
     background: linear-gradient(135deg, #b3e0ff 0%, #ffffff 100%);
     border-radius: 10px;

@@ -8,4 +8,5 @@ Hari ini, rabu 01.oktober.2025 saya mempelajari:
     <li>copy-paste isi index.html (pertemuan-03) ke index.html (pertemuan-04)</li>
     <li>mengganti internal css ke eksternal css</li>
     <li>aturan css untuk body dan global reset</li>
+    <li>styling header</li>
 </ol>

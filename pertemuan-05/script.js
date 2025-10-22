@@ -1,3 +1,3 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const toggle = document.getElementById('menuToggle');
+document.querySelector("nav").classList.toggle("active");
 });

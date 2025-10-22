@@ -86,7 +86,6 @@
             top: 0;
             z-index: 1000;
         }
-    }
 
     header h1 {
         margin: 0 0 8px;
@@ -108,7 +107,7 @@
         background: rgba(255, 255, 255, .08);
         backdrop-filter: saturate(120%);
     }
-
+}
     #about {
     background: linear-gradient(135deg, #b3e0ff 0%, #ffffff 100%);
     border-radius: 10px;

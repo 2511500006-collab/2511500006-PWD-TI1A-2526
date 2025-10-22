@@ -25,12 +25,12 @@
         margin: 10px 0 0;
     }
 
-    hwader li a {
+    header li a {
         color: #fff;
         text-decoration: none;
         padding: 6px 12px;
     }
-    
+
     #about {
     background: linear-gradient(135deg, #b3e0ff 0%, #ffffff 100%);
     border-radius: 10px;

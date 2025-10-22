@@ -34,7 +34,7 @@
     #about,
     #contact {
         background-color: #fff;
-        order-radius: 10px;
+        border-radius: 10px;
         padding: 20px;
         max-width: 700px;
         margin: 20px auto;

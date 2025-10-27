@@ -83,10 +83,10 @@ smallEl.style.width = "100%";
 }
 
 window.addEventListener("resize", () => {
-    document.querySelectorAll(".error-msg").forEach(small => {
-        const target = document.getElementById(small.dataset.forId);
-    if (target) alignErrorMessage(small, target);
- });
+     document.querySelectorAll(".error-msg").forEach(small => {
+        const target = document.getElementById(small.dataset.forId);
+    if (target) alignErrorMessage(small, target);
+});
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -178,7 +178,6 @@ const homeSection = document.getElementById("home");
 const ucapan = document.createElement("p");
 ucapan.textContent = "Halo! Selamat datang di halaman saya!";
 homeSection.appendChild(ucapan);
-});
 
 document.getElementById("txtPesan").addEventListener("input", function () {
 const panjang = this.value.length;

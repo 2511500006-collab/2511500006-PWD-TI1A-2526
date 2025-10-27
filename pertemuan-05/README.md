@@ -15,5 +15,5 @@ Hari ini, rabu 22.oktober.2025 saya mempelajari:
     <li>Latihan Validasi Formulir Sebelum Submit</li>
     <li>Latihan Ganti Teks Tombol Saat Menu Aktif</li>
     <li>Latihan Ucapan Otomatis Saat Halaman Dimuat</li>
-    <li>
+    <li>latihan hitung jumlah karakter</li>
 </ol>

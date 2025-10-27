@@ -192,27 +192,30 @@
     margin-bottom: 16px;
     }
 
-    #contact .form-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    #contact form {
+    display: grid;
+    grid-template-columns:  180px 1fr;
+    gap: 10px;
     }
+
 
     #contact button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    color: white;
-    font-weight: bold;
+    background: #4CAF50;
+    color: #ffffff;
     cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    transition: background 0.3s;
+    grid-column: 2;
+    display: inline-block;
     }
 
     #contact input,
     #contact textarea,
     #contact button {
-        width:100%;
+    
     }
 
     #contact button[type="submit"] {
@@ -222,4 +225,11 @@
     #contact button[type="reset"] {
         background-color: #ed2828;
     }
-    
+
+    #contact button[type="submit"]:hover {
+    background: #008f32;
+    }
+
+    #contact button[type="reset"]:hover {
+    background: #ab1207;
+    }

@@ -6,4 +6,5 @@ NAMA : Grezelco Govin<br>
 Hari ini, rabu 29.oktober.2025 saya mempelajari:
 <ol>
     <li>hello.php</li>
+    <li>index.php</li>
 </ol>

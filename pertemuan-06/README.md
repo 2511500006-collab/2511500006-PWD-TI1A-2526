@@ -7,4 +7,5 @@ Hari ini, rabu 29.oktober.2025 saya mempelajari:
 <ol>
     <li>hello.php</li>
     <li>index.php</li>
+    <li>Latihan variabel dan tipe data</li>
 </ol>

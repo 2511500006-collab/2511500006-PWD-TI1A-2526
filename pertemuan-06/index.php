@@ -1,85 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tugas HTML</title>
-    <link rel="stylesheet" href="style.css"
+<title>Belajar PHP Dasar</title>
 </head>
 <body>
-    <header>
-        <h1>Ini Header</h1>
-        <button class="menu-toggle" id="menu-toggle" aria-label="toggle navigation">
-            &#9776
-        </button>
-        <nav>
-            <ul>
-                <li><a href="#home">Beranda</a></li>
-                <li><a href="#about">Tentang</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home"> 
-            <h2>Selamat datang teman-teman</h2>
-            <?php
-            echo "halo dunia!<br>";
-            echo "nama saya Grezelco govin";
-            ?>
-            <p>Ini contoh paragraf html</p>
-        </section>
-        <?php
-            $nim = "2511500006";
-            $NIM = "2511500";
-            $Nama = "Grezelco Govin";
-            $NAMA = "go' govin";
-        ?>
-        <section id="about">
-           <h2>Tentang saya</h2>
-            <p><strong>NIM:</strong>
-            <?php
-                echo $nim;
-            ?>
-            <p><strong>Nama Lengkap:</strong>            
-            <?php
-                echo $Nama;
-            ?> &#128512;
-            <p><strong>Tempat Lahir:</strong> Bedukang</p>
-            <p><strong>Tanggal Lahir:</strong> 27 September 2007</p>
-            <p><strong>Hobi:</strong> Badminton dan main Game</p>
-            <p><strong>Pasangan:</strong> Blum ada &#128546;</p>
-            <p><strong>Anak ke brp:</strong> Anak kedua dari Dua Bersaudara</p>
-            <p><strong>Nama Kakak:</strong> viorent</p>
-            <p><strong>Minum Kesukaan:</strong> Matcha &#128525;</p>
-            <p><strong>sekian dan terimakasih :D</strong>
-        </section>
-
-        <section id="contact">
-            <h2>~~Kontak saya~~</h2>
-            <form action="" method="get">
-                <label for="txtNama"><span>Nama:</span>
-                <input type="text" id="txtNama" name="txtNama" placeholder="masukkan nama" required autocomplete="name">
-                </label>
-
-                <label for="txtEmail"><span>Email:</span>
-                <input type="text" id="txtEmail" placeholder="masukkan email" required autocomplete="email">
-                </label>
-
-                <label for="txtPesan"><span>pesan anda:</span>
-                <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
-                <small id="charCount">0/200 karakter</small>
-                </label>
-
-                <button type="submit">K>irim</button>
-                <button type="reset">Batal</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Grezelco Govin [2511500006]</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <h1><?php echo "Halo, Dunia PHP!"; ?></h1>
+    <h2><?php echo "Selamat datang di PHP, Grezelco Govin"; ?></h2>
+    <?php
+$nama = "Grezelco Govin";
+$umur = 18;
+$tinggi = 1.75;
+$aktif = true;
+echo "Nama: $nama <br>";
+echo "Umur: $umur tahun <br>";
+echo "Tinggi: $tinggi meter <br>";
+echo "Status aktif: " . ($aktif ? "Ya" : "Tidak") . "<br>";
+var_dump($nama);
+var_dump($umur);
+var_dump($tinggi);
+var_dump($aktif);
+?>
 </body>
 </html>
+

@@ -6,19 +6,35 @@
 <body>
     <h1><?php echo "Halo, Dunia PHP!"; ?></h1>
     <h2><?php echo "Selamat datang di PHP, Grezelco Govin"; ?></h2>
-    <?php
+<?php
 $nama = "Grezelco Govin";
 $umur = 18;
 $tinggi = 1.75;
 $aktif = true;
-echo "Nama: $nama <br>";
-echo "Umur: $umur tahun <br>";
-echo "Tinggi: $tinggi meter <br>";
-echo "Status aktif: " . ($aktif ? "Ya" : "Tidak") . "<br>";
+$hobi = ["Main game", "Badminton", "Musik"];
+$mahasiswa = (object)[
+"nim" => "2511500006",
+"nama" => "Grezelco Govin",
+"prodi" => "Teknik Informatika"
+];
+$nilai_akhir = NULL;
+echo "<h2>Demo Tipe Data PHP</h2>";
+echo "<pre>";
+echo "String:\n";
 var_dump($nama);
+echo "\nInteger:\n";
 var_dump($umur);
+echo "\nFloat:\n";
 var_dump($tinggi);
+echo "\nBoolean:\n";
 var_dump($aktif);
+echo "\nArray:\n";
+var_dump($hobi);
+echo "\nObject:\n";
+var_dump($mahasiswa);
+echo "\nNULL:\n";
+var_dump($nilai_akhir);
+echo "</pre>";
 ?>
 </body>
 </html>

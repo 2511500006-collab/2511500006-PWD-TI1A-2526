@@ -23,13 +23,28 @@
     <main>
         <section id="home"> 
             <h2>Selamat datang teman-teman</h2>
+            <?php
+            echo "halo dunia!<br>";
+            echo "nama saya Grezelco govin";
+            ?>
             <p>Ini contoh paragraf html</p>
         </section>
-
+        <?php
+            $nim = "2511500006";
+            $NIM = "2511500";
+            $Nama = "Grezelco Govin";
+            $NAMA = "go' govin";
+        ?>
         <section id="about">
            <h2>Tentang saya</h2>
-            <p><strong>NIM:</strong> 2511500006</p>
-            <p><strong>Nama Lengkap:</strong> Grezelco Govin &#128512;</p>
+            <p><strong>NIM:</strong>
+            <?php
+                echo $nim;
+            ?>
+            <p><strong>Nama Lengkap:</strong>            
+            <?php
+                echo $Nama;
+            ?> &#128512;
             <p><strong>Tempat Lahir:</strong> Bedukang</p>
             <p><strong>Tanggal Lahir:</strong> 27 September 2007</p>
             <p><strong>Hobi:</strong> Badminton dan main Game</p>
@@ -43,18 +58,20 @@
         <section id="contact">
             <h2>~~Kontak saya~~</h2>
             <form action="" method="get">
-                <label for="txtNama">Nama:</label>
+                <label for="txtNama"><span>Nama:</span>
                 <input type="text" id="txtNama" name="txtNama" placeholder="masukkan nama" required autocomplete="name">
+                </label>
 
-                <label for="txtEmail">Email</label>
+                <label for="txtEmail"><span>Email:</span>
                 <input type="text" id="txtEmail" placeholder="masukkan email" required autocomplete="email">
+                </label>
 
-                <label for="txtPesan">pesan anda</label>
+                <label for="txtPesan"><span>pesan anda:</span>
                 <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
                 <small id="charCount">0/200 karakter</small>
                 </label>
 
-                <button type="submit">Kirim</button>
+                <button type="submit">K>irim</button>
                 <button type="reset">Batal</button>
             </form>
         </section>

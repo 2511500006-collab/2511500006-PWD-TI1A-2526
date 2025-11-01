@@ -54,9 +54,8 @@ small.textContent = message;
 small.style.color = "red";
 small.style.fontSize = "14px";
 small.style.display = "block";
-small.style.marginTop = "-12px";
-small.style.marginBottom = "12px";
-small.style.flexBasis = "100%";
+small.style.marginTop = "4px";
+small.style.marginBottom = "8px";
 small.dataset.forId = inputElement.id;
 
 if (inputElement.nextSibling) {

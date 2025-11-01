@@ -43,15 +43,23 @@
         <section id="contact">
             <h2>~~Kontak saya~~</h2>
             <form action="" method="get">
-                <label for="txtNama">Nama:</label>
+                <label for="txtNama"><span>Nama:</span>
+                <div class="input-wrapper">
                 <input type="text" id="txtNama" name="txtNama" placeholder="masukkan nama" required autocomplete="name">
+                </div>
+                </label>
 
-                <label for="txtEmail">Email</label>
+                <label for="txtEmail"><span>Email:</span>
+                <div class="input-wrapper">
                 <input type="text" id="txtEmail" placeholder="masukkan email" required autocomplete="email">
+                </div>
+                </label>
 
-                <label for="txtPesan">pesan anda</label>
+                <label for="txtPesan"><span>pesan anda:</span>
+                <div class="input-wrapper">
                 <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
                 <small id="charCount">0/200 karakter</small>
+                </div>
                 </label>
 
                 <button type="submit">Kirim</button>

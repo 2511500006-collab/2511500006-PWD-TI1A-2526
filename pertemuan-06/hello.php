@@ -38,9 +38,20 @@ echo "</pre>";
 ?>
 <?php
 define("DOSEN_PENGAMPU", "Yohanes Setiawan Japriadi, M.Kom.");
-const MATAKULIAH = "Pemrograman Web Dasar";
+const MATAKULIAH = "Pemrograman Web";
 echo "Dosen: " . DOSEN_PENGAMPU . "<br>";
 echo "Matakuliah: " . MATAKULIAH;
+?>
+<?php
+// Membuat konstanta kampus menggunakan define
+// define("DOSEN_PENGAMPU", "Yohanes Setiawan Japriadi, M.Kom.");
+# Membuat konstanta MATAKULIAH menggunakan const
+/*const MATAKULIAH = "Pemrograman Web";
+ Menampilkan nilai DOSEN_PENGAMPU ke layar
+echo "Dosen: " . DOSEN_PENGAMPU . "<br>";
+ Menampilkan nilai konstanta MATAKULIAH ke layar
+echo "Matakuliah: " . MATAKULIAH;
+*/
 ?>
 </body>
 </html>

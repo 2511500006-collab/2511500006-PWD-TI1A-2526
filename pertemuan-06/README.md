@@ -12,4 +12,5 @@ Hari ini, rabu 29.oktober.2025 saya mempelajari:
     <li>Latihan konstanta</li>
     <li>Latihan komentar/remark</li>
     <li>Latihan operator dasar</li>
+    <li>Latihan struktur kontrol percabangan</li>
 </ol>

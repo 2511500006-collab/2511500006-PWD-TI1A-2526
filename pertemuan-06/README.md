@@ -11,4 +11,5 @@ Hari ini, rabu 29.oktober.2025 saya mempelajari:
     <li>Latihan tipe data</li>
     <li>Latihan konstanta</li>
     <li>Latihan komentar/remark</li>
+    <li>Latihan operator dasar</li>
 </ol>

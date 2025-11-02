@@ -53,6 +53,12 @@ echo "Dosen: " . DOSEN_PENGAMPU . "<br>";
 echo "Matakuliah: " . MATAKULIAH;
 */
 ?>
+<?php
+$a = 10;
+$b = 3;
+echo $a + $b;
+echo $a % $b;
+?>
 </body>
 </html>
 

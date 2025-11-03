@@ -14,4 +14,6 @@ Hari ini, rabu 29.oktober.2025 saya mempelajari:
     <li>Latihan operator dasar</li>
     <li>Latihan struktur kontrol percabangan</li>
     <li>Latihan struktur kontrol perulangan dan array</li>
+    <li>Latihan array dan penggunaan print_r() dan var_dump()</li>
+    <li>Latihan struktur kontrol perulangan dengan for</li>
 </ol>

@@ -89,7 +89,7 @@ default: echo "Hari biasa.";
 }
 ?>
 <?php
-$hobi = ["Coding", "Memasak", "Musik", "Membaca", "Traveling"];
+$hobi = ["Game", "Makan", "Musik", "Nonton", "Traveling"];
 echo "<h3>Daftar Hobi Saya:</h3>";
 for ($i = 0; $i < count($hobi); $i++) {
 echo ($i + 1) . ". " . $hobi[$i] . "<br>";

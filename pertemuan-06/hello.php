@@ -104,6 +104,13 @@ echo "<pre>";
 var_dump($hobi);
 echo "</pre>";
 ?>
+<?php
+$i = 1;
+do {
+echo "Iterasi ke-$i<br>";
+$i++;
+} while (1 == 1);
+?>
 </body>
 </html>
 

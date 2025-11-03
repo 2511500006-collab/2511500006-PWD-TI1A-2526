@@ -88,6 +88,12 @@ case "Jumat": echo "Hampir weekend!"; break;
 default: echo "Hari biasa.";
 }
 ?>
+<?php
+$hobi = ["Coding", "Memasak", "Musik"];
+foreach ($hobi as $item) {
+echo "Hobi: $item <br>";
+}
+?>
 </body>
 </html>
 

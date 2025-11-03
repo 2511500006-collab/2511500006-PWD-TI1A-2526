@@ -107,7 +107,7 @@ echo "</pre>";
 <?php
 $i = 1;
 do {
-echo "Iterasi ke-$i<br>";
+echo "mari menghitung->$i<br>";
 $i++;
 } while (1 == 1);
 ?>

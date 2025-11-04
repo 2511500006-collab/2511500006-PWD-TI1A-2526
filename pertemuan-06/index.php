@@ -1,168 +1,17 @@
-<?php
-  $nim = "2511500006";
-  $nama_lengkap = "Grezelco Govin &#128512;"; 
-  $tempat_lahir = "Bedukang";
-  $tanggal_lahir = "27 September 2007";
-  $hobi = "Badminton dan main Game";
-  $pasangan = "Blum ada &#128546;";
-  $anak_ke = "Anak kedua dari Dua Bersaudara";
-  $nama_kakak = "viorent";
-  $minum_kesukaan = "Matcha &#128525;";
-  $penutup = "sekian dan terimakasih :D";
-
-  $namaMatkul1 = "Algoritma dan Struktur Data";
-  $sksMatkul1 = 4;
-  $nilaiHadir1 = 90;
-  $nilaiTugas1 = 60;
-  $nilaiUTS1 = 80;
-  $nilaiUAS1 = 70;
-
-  $namaMatkul2 = "Agama";
-  $sksMatkul2 = 2;
-  $nilaiHadir2 = 70;
-  $nilaiTugas2 = 50;
-  $nilaiUTS2 = 60;
-  $nilaiUAS2 = 80;
-
-  $namaMatkul3 = "Basis Data";
-  $sksMatkul3 = 3;
-  $nilaiHadir3 = 85;
-  $nilaiTugas3 = 75;
-  $nilaiUTS3 = 80;
-  $nilaiUAS3 = 85;
-
-  $namaMatkul4 = "Kalkulus";
-  $sksMatkul4 = 3;
-  $nilaiHadir4 = 100;
-  $nilaiTugas4 = 90;
-  $nilaiUTS4 = 85;
-  $nilaiUAS4 = 90;
-
-  $namaMatkul5 = "Pemrograman Web Dasar";
-  $sksMatkul5 = 3;
-  $nilaiHadir5 = 69; 
-  $nilaiTugas5 = 80;
-  $nilaiUTS5 = 90;
-  $nilaiUAS5 = 100;
-  $nilaiAkhir1 = (0.1 * $nilaiHadir1) + (0.2 * $nilaiTugas1) + (0.3 * $nilaiUTS1) + (0.4 * $nilaiUAS1);
-  if ($nilaiHadir1 < 70) {
-      $grade1 = "E"; $mutu1 = 0.00; $status1 = "Gagal";
-  } else {
-      if ($nilaiAkhir1 >= 91) { $grade1 = "A"; $mutu1 = 4.00; }
-      elseif ($nilaiAkhir1 >= 81) { $grade1 = "A-"; $mutu1 = 3.70; }
-      elseif ($nilaiAkhir1 >= 76) { $grade1 = "B+"; $mutu1 = 3.30; }
-      elseif ($nilaiAkhir1 >= 71) { $grade1 = "B"; $mutu1 = 3.00; }
-      elseif ($nilaiAkhir1 >= 66) { $grade1 = "B-"; $mutu1 = 2.70; }
-      elseif ($nilaiAkhir1 >= 61) { $grade1 = "C+"; $mutu1 = 2.30; }
-      elseif ($nilaiAkhir1 >= 56) { $grade1 = "C"; $mutu1 = 2.00; }
-      elseif ($nilaiAkhir1 >= 51) { $grade1 = "C-"; $mutu1 = 1.70; }
-      elseif ($nilaiAkhir1 >= 36) { $grade1 = "D"; $mutu1 = 1.00; }
-      else { $grade1 = "E"; $mutu1 = 0.00; }
-      
-      if ($grade1 == "D" || $grade1 == "E") { $status1 = "Gagal"; }
-      else { $status1 = "Lulus"; }
-  }
-  $bobot1 = $mutu1 * $sksMatkul1;
-
-  $nilaiAkhir2 = (0.1 * $nilaiHadir2) + (0.2 * $nilaiTugas2) + (0.3 * $nilaiUTS2) + (0.4 * $nilaiUAS2);
-  if ($nilaiHadir2 < 70) {
-      $grade2 = "E"; $mutu2 = 0.00; $status2 = "Gagal";
-  } else {
-      if ($nilaiAkhir2 >= 91) { $grade2 = "A"; $mutu2 = 4.00; }
-      elseif ($nilaiAkhir2 >= 81) { $grade2 = "A-"; $mutu2 = 3.70; }
-      elseif ($nilaiAkhir2 >= 76) { $grade2 = "B+"; $mutu2 = 3.30; }
-      elseif ($nilaiAkhir2 >= 71) { $grade2 = "B"; $mutu2 = 3.00; }
-      elseif ($nilaiAkhir2 >= 66) { $grade2 = "B-"; $mutu2 = 2.70; }
-      elseif ($nilaiAkhir2 >= 61) { $grade2 = "C+"; $mutu2 = 2.30; }
-      elseif ($nilaiAkhir2 >= 56) { $grade2 = "C"; $mutu2 = 2.00; }
-      elseif ($nilaiAkhir2 >= 51) { $grade2 = "C-"; $mutu2 = 1.70; }
-      elseif ($nilaiAkhir2 >= 36) { $grade2 = "D"; $mutu2 = 1.00; }
-      else { $grade2 = "E"; $mutu2 = 0.00; }
-      
-      if ($grade2 == "D" || $grade2 == "E") { $status2 = "Gagal"; }
-      else { $status2 = "Lulus"; }
-  }
-  $bobot2 = $mutu2 * $sksMatkul2;
-  $nilaiAkhir3 = (0.1 * $nilaiHadir3) + (0.2 * $nilaiTugas3) + (0.3 * $nilaiUTS3) + (0.4 * $nilaiUAS3);
-  if ($nilaiHadir3 < 70) {
-      $grade3 = "E"; $mutu3 = 0.00; $status3 = "Gagal";
-  } else {
-      if ($nilaiAkhir3 >= 91) { $grade3 = "A"; $mutu3 = 4.00; }
-      elseif ($nilaiAkhir3 >= 81) { $grade3 = "A-"; $mutu3 = 3.70; }
-      elseif ($nilaiAkhir3 >= 76) { $grade3 = "B+"; $mutu3 = 3.30; }
-      elseif ($nilaiAkhir3 >= 71) { $grade3 = "B"; $mutu3 = 3.00; }
-      elseif ($nilaiAkhir3 >= 66) { $grade3 = "B-"; $mutu3 = 2.70; }
-      elseif ($nilaiAkhir3 >= 61) { $grade3 = "C+"; $mutu3 = 2.30; }
-      elseif ($nilaiAkhir3 >= 56) { $grade3 = "C"; $mutu3 = 2.00; }
-      elseif ($nilaiAkhir3 >= 51) { $grade3 = "C-"; $mutu3 = 1.70; }
-      elseif ($nilaiAkhir3 >= 36) { $grade3 = "D"; $mutu3 = 1.00; }
-      else { $grade3 = "E"; $mutu3 = 0.00; }
-      
-      if ($grade3 == "D" || $grade3 == "E") { $status3 = "Gagal"; }
-      else { $status3 = "Lulus"; }
-  }
-  $bobot3 = $mutu3 * $sksMatkul3;
-
-  $nilaiAkhir4 = (0.1 * $nilaiHadir4) + (0.2 * $nilaiTugas4) + (0.3 * $nilaiUTS4) + (0.4 * $nilaiUAS4);
-  if ($nilaiHadir4 < 70) {
-      $grade4 = "E"; $mutu4 = 0.00; $status4 = "Gagal";
-  } else {
-      if ($nilaiAkhir4 >= 91) { $grade4 = "A"; $mutu4 = 4.00; }
-      elseif ($nilaiAkhir4 >= 81) { $grade4 = "A-"; $mutu4 = 3.70; }
-      elseif ($nilaiAkhir4 >= 76) { $grade4 = "B+"; $mutu4 = 3.30; }
-      elseif ($nilaiAkhir4 >= 71) { $grade4 = "B"; $mutu4 = 3.00; }
-      elseif ($nilaiAkhir4 >= 66) { $grade4 = "B-"; $mutu4 = 2.70; }
-      elseif ($nilaiAkhir4 >= 61) { $grade4 = "C+"; $mutu4 = 2.30; }
-      elseif ($nilaiAkhir4 >= 56) { $grade4 = "C"; $mutu4 = 2.00; }
-      elseif ($nilaiAkhir4 >= 51) { $grade4 = "C-"; $mutu4 = 1.70; }
-      elseif ($nilaiAkhir4 >= 36) { $grade4 = "D"; $mutu4 = 1.00; }
-      else { $grade4 = "E"; $mutu4 = 0.00; }
-      
-      if ($grade4 == "D" || $grade4 == "E") { $status4 = "Gagal"; }
-      else { $status4 = "Lulus"; }
-  }
-  $bobot4 = $mutu4 * $sksMatkul4;
-  $nilaiAkhir5 = (0.1 * $nilaiHadir5) + (0.2 * $nilaiTugas5) + (0.3 * $nilaiUTS5) + (0.4 * $nilaiUAS5);
-  if ($nilaiHadir5 < 70) {
-      $grade5 = "E"; $mutu5 = 0.00; $status5 = "Gagal";
-  } else {
-      if ($nilaiAkhir5 >= 91) { $grade5 = "A"; $mutu5 = 4.00; }
-      elseif ($nilaiAkhir5 >= 81) { $grade5 = "A-"; $mutu5 = 3.70; }
-      elseif ($nilaiAkhir5 >= 76) { $grade5 = "B+"; $mutu5 = 3.30; }
-      elseif ($nilaiAkhir5 >= 71) { $grade5 = "B"; $mutu5 = 3.00; }
-      elseif ($nilaiAkhir5 >= 66) { $grade5 = "B-"; $mutu5 = 2.70; }
-      elseif ($nilaiAkhir5 >= 61) { $grade5 = "C+"; $mutu5 = 2.30; }
-      elseif ($nilaiAkhir5 >= 56) { $grade5 = "C"; $mutu5 = 2.00; }
-      elseif ($nilaiAkhir5 >= 51) { $grade5 = "C-"; $mutu5 = 1.70; }
-      elseif ($nilaiAkhir5 >= 36) { $grade5 = "D"; $mutu5 = 1.00; }
-      else { $grade5 = "E"; $mutu5 = 0.00; }
-      
-      if ($grade5 == "D" || $grade5 == "E") { $status5 = "Gagal"; }
-      else { $status5 = "Lulus"; }
-  }
-  $bobot5 = $mutu5 * $sksMatkul5;
-  $totalBobot = $bobot1 + $bobot2 + $bobot3 + $bobot4 + $bobot5;
-  $totalSKS = $sksMatkul1 + $sksMatkul2 + $sksMatkul3 + $sksMatkul4 + $sksMatkul5;
-
-  if ($totalSKS > 0) {
-    $IPK = $totalBobot / $totalSKS;
-  } else {
-    $IPK = 0;
-  }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tugas HTML</title>
+    <title>Judul Halaman</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Ini Header</h1>
-        <button class="menu-toggle" id="menu-toggle" aria-label="toggle navigation">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
             &#9776;
         </button>
         <nav>
@@ -173,145 +22,221 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="home"> 
-            <h2>Selamat datang teman-teman</h2>
-            <p>Ini contoh paragraf html</p>
-        </section>
 
-        <section id="about">
-           <h2>Tentang saya</h2>
-            <p><strong>NIM:</strong> <?php echo $nim; ?></p>
-            <p><strong>Nama Lengkap:</strong> <?php echo $nama_lengkap; ?></p>
-            <p><strong>Tempat Lahir:</strong> <?php echo $tempat_lahir; ?></p>
-            <p><strong>Tanggal Lahir:</strong> <?php echo $tanggal_lahir; ?></p>
-            <p><strong>Hobi:</strong> <?php echo $hobi; ?></p>
-            <p><strong>Pasangan:</strong> <?php echo $pasangan; ?></p>
-            <p><strong>Anak ke brp:</strong> <?php echo $anak_ke; ?></p>
-            <p><strong>Nama Kakak:</strong> <?php echo $nama_kakak; ?></p>
-            <p><strong>Minum Kesukaan:</strong> <?php echo $minum_kesukaan; ?></p>
-            <p><?php echo $penutup; ?></p>
+    <main>
+        <section id="home">
+            <h2>Selamat datang teman-teman</h2>
+            <?php 
+                echo "halo dunia!<br>";
+                echo "perkenalkan nama saya Grezelco Govin";
+            ?>
+            <p>Ini contoh paragraf HTML</p>
         </section>
 
         <section id="ipk">
             <h2>Nilai Saya</h2>
+            <?php 
 
-            <div class="data-matkul" style="margin-bottom: 20px;">
-              <h3><?php echo $namaMatkul1; ?></h3> 
-              <p><strong>SKS:</strong> <?php echo $sksMatkul1; ?></p>
-              <p><strong>Kehadiran:</strong> <?php echo $nilaiHadir1; ?></p>
-              <p><strong>Tugas:</strong> <?php echo $nilaiTugas1; ?></p>
-              <p><strong>UTS:</strong> <?php echo $nilaiUTS1; ?></p>
-              <p><strong>UAS:</strong> <?php echo $nilaiUAS1; ?></p>
-              
-              <hr> 
-              <p><strong>Nilai Akhir:</strong> <?php echo $nilaiAkhir1; ?></p>
-              <p><strong>Grade:</strong> <?php echo $grade1; ?></p>
-              <p><strong>Angka Mutu:</strong> <?php echo $mutu1; ?></p>
-              <p><strong>Bobot:</strong> <?php echo $bobot1; ?></p>
-              <p><strong>Status:</strong> <?php echo $status1; ?></p>
-            </div>
+            $namaMatkul1 = "Kalkulus";
+            $namaMatkul2 = "Logika Informatika";
+            $namaMatkul3 = "Pengantar Teknik Informatika";
+            $namaMatkul4 = "Jaringan Komputer";
+            $namaMatkul5 = "Pemrograman Web Dasar";
 
-            <div class="data-matkul" style="margin-bottom: 20px;">
-              <h3><?php echo $namaMatkul2; ?></h3>
-              <p><strong>SKS:</strong> <?php echo $sksMatkul2; ?></p>
-              <p><strong>Kehadiran:</strong> <?php echo $nilaiHadir2; ?></p>
-              <p><strong>Tugas:</strong> <?php echo $nilaiTugas2; ?></p>
-              <p><strong>UTS:</strong> <?php echo $nilaiUTS2; ?></p>
-              <p><strong>UAS:</strong> <?php echo $nilaiUAS2; ?></p>
-              <hr>
-              <p><strong>Nilai Akhir:</strong> <?php echo $nilaiAkhir2; ?></p>
-              <p><strong>Grade:</strong> <?php echo $grade2; ?></p>
-              <p><strong>Angka Mutu:</strong> <?php echo $mutu2; ?></p>
-              <p><strong>Bobot:</strong> <?php echo $bobot2; ?></p>
-              <p><strong>Status:</strong> <?php echo $status2; ?></p>
-            </div>
+            $sksMatkul1 = 4;
+            $sksMatkul2 = 2;
+            $sksMatkul3 = 3;
+            $sksMatkul4 = 3;
+            $sksMatkul5 = 3;
 
-            <div class="data-matkul" style="margin-bottom: 20px;">
-              <h3><?php echo $namaMatkul3; ?></h3>
-              <p><strong>SKS:</strong> <?php echo $sksMatkul3; ?></p>
-              <p><strong>Kehadiran:</strong> <?php echo $nilaiHadir3; ?></p>
-              <p><strong>Tugas:</strong> <?php echo $nilaiTugas3; ?></p>
-              <p><strong>UTS:</strong> <?php echo $nilaiUTS3; ?></p>
-              <p><strong>UAS:</strong> <?php echo $nilaiUAS3; ?></p>
-              <hr>
-              <p><strong>Nilai Akhir:</strong> <?php echo $nilaiAkhir3; ?></p>
-              <p><strong>Grade:</strong> <?php echo $grade3; ?></p>
-              <p><strong>Angka Mutu:</strong> <?php echo $mutu3; ?></p>
-              <p><strong>Bobot:</strong> <?php echo $bobot3; ?></p>
-              <p><strong>Status:</strong> <?php echo $status3; ?></p>
-            </div>
+            $nilaiHadir1 = 90; $nilaiTugas1 = 85; $nilaiUTS1 = 80; $nilaiUAS1 = 70;
+            $nilaiHadir2 = 70; $nilaiTugas2 = 80; $nilaiUTS2 = 82; $nilaiUAS2 = 87;
+            $nilaiHadir3 = 95; $nilaiTugas3 = 80; $nilaiUTS3 = 75; $nilaiUAS3 = 85;
+            $nilaiHadir4 = 88; $nilaiTugas4 = 79; $nilaiUTS4 = 70; $nilaiUAS4 = 90;
+            $nilaiHadir5 = 79; $nilaiTugas5 = 80; $nilaiUTS5 = 90; $nilaiUAS5 = 100;
+ 
+            function hitungNilaiAkhir($hadir, $tugas, $uts, $uas) {
+                return (0.1 * $hadir) + (0.2 * $tugas) + (0.3 * $uts) + (0.4 * $uas);
+            }
 
-            <div class="data-matkul" style="margin-bottom: 20px;">
-              <h3><?php echo $namaMatkul4; ?></h3>
-              <p><strong>SKS:</strong> <?php echo $sksMatkul4; ?></p>
-              <p><strong>Kehadiran:</strong> <?php echo $nilaiHadir4; ?></p>
-              <p><strong>Tugas:</strong> <?php echo $nilaiTugas4; ?></p>
-              <p><strong>UTS:</strong> <?php echo $nilaiUTS4; ?></p>
-              <p><strong>UAS:</strong> <?php echo $nilaiUAS4; ?></p>
-              <hr>
-              <p><strong>Nilai Akhir:</strong> <?php echo $nilaiAkhir4; ?></p>
-              <p><strong>Grade:</strong> <?php echo $grade4; ?></p>
-              <p><strong>Angka Mutu:</strong> <?php echo $mutu4; ?></p>
-              <p><strong>Bobot:</strong> <?php echo $bobot4; ?></p>
-              <p><strong>Status:</strong> <?php echo $status4; ?></p>
-            </div>
+            function tentukanGrade($nilaiAkhir, $hadir) {
+                if ($hadir < 70) return "E";
+                elseif ($nilaiAkhir >= 85) return "A";
+                elseif ($nilaiAkhir >= 80) return "A-";
+                elseif ($nilaiAkhir >= 75) return "B+";
+                elseif ($nilaiAkhir >= 70) return "B";
+                elseif ($nilaiAkhir >= 65) return "B-";
+                elseif ($nilaiAkhir >= 60) return "C";
+                elseif ($nilaiAkhir >= 50) return "D";
+                else return "E";
+            }
 
-            <div class="data-matkul" style="margin-bottom: 20px;">
-              <h3><?php echo $namaMatkul5; ?></h3>
-              <p><strong>SKS:</strong> <?php echo $sksMatkul5; ?></p>
-              <p><strong>Kehadiran:</strong> <?php echo $nilaiHadir5; ?></p>
-              <p><strong>Tugas:</strong> <?php echo $nilaiTugas5; ?></p>
-              <p><strong>UTS:</strong> <?php echo $nilaiUTS5; ?></p>
-              <p><strong>UAS:</strong> <?php echo $nilaiUAS5; ?></p>
-              <hr>
-              <p><strong>Nilai Akhir:</strong> <?php echo $nilaiAkhir5; ?></p>
-              <p><strong>Grade:</strong> <?php echo $grade5; ?></p>
-              <p><strong>Angka Mutu:</strong> <?php echo $mutu5; ?></p>
-              <p><strong>Bobot:</strong> <?php echo $bobot5; ?></p>
-              <p><strong>Status:</strong> <?php echo $status5; ?></p>
-            </div>
+            function konversiMutu($grade) {
+                switch($grade) {
+                    case "A": return 4.0;
+                    case "A-": return 3.7;
+                    case "B+": return 3.3;
+                    case "B": return 3.0;
+                    case "B-": return 2.7;
+                    case "C": return 2.0;
+                    case "D": return 1.0;
+                    default: return 0.0;
+                }
+            }
 
-            <div class="total-ipk">
-              <hr style="border-width: 2px; border-color: black;"> 
-              <p><strong>Total Bobot:</strong> <?php echo $totalBobot; ?></p>
-              <p><strong>Total SKS:</strong> <?php echo $totalSKS; ?></p>
-              
-              <h3>IPK: <?php echo number_format($IPK, 2); ?></h3> 
-            </div>
+            $matkul = [
+                [$namaMatkul1, $sksMatkul1, $nilaiHadir1, $nilaiTugas1, $nilaiUTS1, $nilaiUAS1],
+                [$namaMatkul2, $sksMatkul2, $nilaiHadir2, $nilaiTugas2, $nilaiUTS2, $nilaiUAS2],
+                [$namaMatkul3, $sksMatkul3, $nilaiHadir3, $nilaiTugas3, $nilaiUTS3, $nilaiUAS3],
+                [$namaMatkul4, $sksMatkul4, $nilaiHadir4, $nilaiTugas4, $nilaiUTS4, $nilaiUAS4],
+                [$namaMatkul5, $sksMatkul5, $nilaiHadir5, $nilaiTugas5, $nilaiUTS5, $nilaiUAS5],
+            ];
+
+            $totalBobot = 0;
+            $totalSKS = 0;
+            $no = 1;
+
+            foreach ($matkul as $m) {
+                list($nama, $sks, $hadir, $tugas, $uts, $uas) = $m;
+
+                $nilaiAkhir = hitungNilaiAkhir($hadir, $tugas, $uts, $uas);
+                $grade = tentukanGrade($nilaiAkhir, $hadir);
+                $mutu = konversiMutu($grade);
+                $bobot = $mutu * $sks;
+                $status = ($grade == "D" || $grade == "E") ? "Gagal" : "Lulus";
+
+                $totalBobot += $bobot;
+                $totalSKS += $sks;
+
+            echo "<div style='margin-bottom:25px; border-bottom:1px solid #ccc; padding-bottom:10px;'>";
+            echo "<b>Nama Mata Kuliah ke-$no</b> : $nama<br><br>";
+            echo "<table style='border-collapse:collapse; width:350px;'>";
+            echo "<tr><td style='width:140px;'>SKS</td><td>: $sks</td></tr>";
+            echo "<tr><td>Kehadiran</td><td>: $hadir</td></tr>";
+            echo "<tr><td>Tugas</td><td>: $tugas</td></tr>";
+            echo "<tr><td>UTS</td><td>: $uts</td></tr>";
+            echo "<tr><td>UAS</td><td>: $uas</td></tr>";
+            echo "<tr><td>Nilai Akhir</td><td>: ".number_format($nilaiAkhir,2)."</td></tr>";
+            echo "<tr><td>Grade</td><td>: $grade</td></tr>";
+            echo "<tr><td>Angka Mutu</td><td>: ".number_format($mutu,2)."</td></tr>";
+            echo "<tr><td>Bobot</td><td>: ".number_format($bobot,2)."</td></tr>";
+            echo "<tr><td>Status</td><td>: $status</td></tr>";
+            echo "</table>"; 
+            echo "</div>";
+
+            $no++;
+        }
+
+        $ipk = $totalBobot / $totalSKS;
+
+            echo "<h3>Total Bobot = ".number_format($totalBobot,2)."</h3>";
+            echo "<h3>Total SKS = $totalSKS</h3>";
+            echo "<h2>IPK = ".number_format($ipk,2)."</h2>";
+            ?>
         </section>
-                
-        <section id="contact">
+
+        <section id="about">
+            <?php
+                $nim = 2511500006;
+                $NIM = 2511500006;
+                $Nim = "";
+                $nama = "Grezelco Govin &#128526";
+                $Nama = "govin";
+                $lahir = "bedukang";
+                $LAHIR = "finlandia";
+                $tanggal = "27 September 2007";
+                $TANGGAL = "27 September 2007";
+                $hobi = "Badminton dan main Game";
+                $HOBI = "mancing";
+                $pasangan = "Blum ada &#128546";
+                $PASANGAN = ";Ada 5";
+                $anakke = "Anak kedua dari Dua Bersaudara";
+                $ANAKKE = "anak ke 25";
+                $Namakakak = "viorent";
+                $namakakak = "vio";
+                $minum = "matcha";
+                $Minum = "kopi";
+                $sekian = "sekian dan terimakasih :D";
+                $Sekian = "ya";
+            ?>
+            <h2>Tentang saya</h2>
+            <p><strong>NIM</strong> 
+                <?php 
+                echo $nim; 
+                ?>
+            </p>
+            <p><strong>Nama Lengkap</strong> 
+                <?php 
+                echo $nama;
+                ?>
+            </p>
+            <p><strong>Tempat lahir</strong> 
+                <?php 
+                echo $lahir; 
+                ?>
+            </p>
+            <p><strong>Tanggal lahir</strong>
+                <?php 
+                echo $tanggal; 
+                ?>
+            </p>
+            <p><strong>Hobi</strong> 
+                <?php 
+                echo $hobi; 
+                ?>
+            </p>
+            <p><strong>Pasangan</strong> 
+                <?php 
+                echo $pasangan; 
+                ?>
+            </p>
+            <p><strong>Anak ke brp</strong> 
+                <?php 
+                echo $anakke; 
+                ?>
+            </p>
+            <p><strong>Nama kakak</strong> 
+                <?php 
+                echo $Namakakak; 
+                ?>
+            </p>
+            <p><strong>Minum kesukaan</strong>
+                <?php 
+                echo $minum; 
+                ?>
+            </p>
+            <p><strong>Sekian dan terimakasih</strong>
+            </p>
+        </section>
+
+             <section id="contact">
             <h2>~~Kontak saya~~</h2>
             <form action="" method="get">
                 <label for="txtNama"><span>Nama:</span>
-                <div class="input-wrapper">
                 <input type="text" id="txtNama" name="txtNama" placeholder="masukkan nama" required autocomplete="name">
-                </div>
                 </label>
 
                 <label for="txtEmail"><span>Email:</span>
-                <div class="input-wrapper">
                 <input type="text" id="txtEmail" placeholder="masukkan email" required autocomplete="email">
-                </div>
                 </label>
 
                 <label for="txtPesan"><span>pesan anda:</span>
-                <div class="input-wrapper">
                 <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
                 <small id="charCount">0/200 karakter</small>
-                </div>
                 </label>
 
                 <button type="submit">Kirim</button>
                 <button type="reset">Batal</button>
             </form>
         </section>
+
     </main>
+
     <footer>
         <p>&copy; 2025 Grezelco Govin [2511500006]</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>

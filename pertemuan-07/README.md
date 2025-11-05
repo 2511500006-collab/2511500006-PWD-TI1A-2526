@@ -9,4 +9,5 @@ Hari ini, rabu 05.november.2025 saya mempelajari:
     <li>copy dan rename index.php menjadi get.php, lalu membuat file baru get_proses.php</li>
     <li>isi get_proses_php</li>
     <li>menambahkan session_start di get_proses.php</li>
+    <li>menambahkan section dari get_proses.php</li>
 </ol>

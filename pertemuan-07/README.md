@@ -11,4 +11,5 @@ Hari ini, rabu 05.november.2025 saya mempelajari:
     <li>menambahkan session_start di get_proses.php</li>
     <li>menambahkan section dari get_proses.php</li>
     <li>copy paste get.php dan get_proses.php dan di paste ke file baru</li>
+    <li>seusaikan get ke post</li>
 </ol>

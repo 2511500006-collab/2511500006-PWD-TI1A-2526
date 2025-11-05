@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
             label.style.alignItems = 'baseline';
             label.style.width = '100%';
             span.style.minWidth = '180px';
-            span.style.textAlign = 'left';
+            span.style.textAlign = 'right';
             span.style.paddingRight = '16px';
             span.style.flexShrink = '0';
             span.style.marginBottom = '0';
@@ -171,5 +171,5 @@ window.addEventListener("resize", () => {
     document.querySelectorAll(".error-msg").forEach(small => {
         const target = document.getElementById(small.dataset.forId);
         if (target) alignErrorMessage(small, target);
-    });
+    });
 });

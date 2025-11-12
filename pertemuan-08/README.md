@@ -10,4 +10,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
   <li>mendownload file zip lalu di tambahkan ke pertemuan-8</li>
   <li>section baru dengan judul Pendaftaran Profil Pengunjung</li>
   <li>menambahkan input baru di dalam form</li>
+  <li>styling css</li>
 </ol>

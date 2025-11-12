@@ -9,4 +9,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <ol>
   <li>silahkan diisi sesuai proses pengerjaan kalian masing-masing</li>
   <li>mendownload file zip lalu di tambahkan ke pertemuan-8</li>
+  <li>section baru dengan judul Pendaftaran Profil Pengunjung</li>
 </ol>

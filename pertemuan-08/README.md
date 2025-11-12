@@ -7,7 +7,7 @@ Hari ini, Rabu 12.NOV.2025, saya mempelajari:<br>
 <br>
 Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <ol>
-  <li>silahkan diisi sesuai proses pengerjaan kalian masing-masing</li>
   <li>mendownload file zip lalu di tambahkan ke pertemuan-8</li>
   <li>section baru dengan judul Pendaftaran Profil Pengunjung</li>
+  <li>menambahkan input baru di dalam form</li>
 </ol>

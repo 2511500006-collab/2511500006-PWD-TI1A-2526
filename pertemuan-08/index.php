@@ -54,7 +54,55 @@ endif;
 
     <section>
     <h2>Pendaftaran Profil Pengunjung</h2>
+
+    <form action="proses.php" method="POST">
+    <label for="txtNIM"><span>NIM:</span>
+    <input type="text" id="txtNIM" name="txtNIM" placeholder="Masukkan NIM" required autocomplete="NIM">
+    </label>
+
+    <label for="txtNama"><span>Nama Lengkap:</span>
+    <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan Nama Lengkap" required autocomplete="name">
+    </label>
+
+    <label for="txtNama"><span>Tempat Lahir:</span>
+    <input type="text" id="txtNama" name="txtNama" placeholder="Tempat Lahir" required autocomplete="name">
+    </label>
+
+    <label for="txtNama"><span>Tanggal lahir:</span>
+    <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan Tanggal Lahir" required autocomplete="name">
+    </label>
+
+    <label for="txtNama"><span>Hobi:</span>
+    <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan Hobi" required autocomplete="name">
+    </label>
+
+    <label for="txtNama"><span>Pasangan:</span>
+    <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan pasangan" required autocomplete="name">
+    </label>
+
+    <label for="txtNama"><span>pekerjaan:</span>
+    <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan Pekerjaan" required autocomplete="name">
+    </label>
+
+    <label for="txtNama"><span>Nama Orang Tua:</span>
+    <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan Nama Orang Tua" required autocomplete="name">
+    </label>
+
+    <label for="txtNama"><span>Nama Kakak:</span>
+    <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan Nama Kakak" required autocomplete="name">
+    </label>
+
+    <label for="txtNama"><span>Nama Adik:</span>
+    <input type="text" id="txtNama" name="txtNama" placeholder="Nama Adik" required autocomplete="name">
+    </label>
+
+    <button type="submit">Kirim</button>
+    <button type="reset">Batal</button>
+
+    <small id="charCount">0/200 karakter</small>
+    </label>
     </section>
+    </form>
 
     <section id="about">
       <?php

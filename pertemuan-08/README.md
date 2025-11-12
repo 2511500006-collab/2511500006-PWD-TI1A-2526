@@ -11,4 +11,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
   <li>section baru dengan judul Pendaftaran Profil Pengunjung</li>
   <li>menambahkan input baru di dalam form</li>
   <li>styling css</li>
+  <li>Saat tombol Kirim diklik (nama untuk file action proses dibebaskan)</li>
 </ol>

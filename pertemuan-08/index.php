@@ -60,8 +60,8 @@ endif;
     <input type="text" id="txtNIM" name="txtNIM" placeholder="Masukkan NIM" required autocomplete="NIM">
     </label>
 
-    <label for="txtNama"><span>Nama Lengkap:</span>
-    <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan Nama Lengkap" required autocomplete="Nama">
+    <label for="txtName"><span>Nama Lengkap:</span>
+    <input type="text" id="txtName" name="txtName" placeholder="Masukkan Nama Lengkap" required autocomplete="Name">
     </label>
 
     <label for="txtLahir"><span>Tempat Lahir:</span>

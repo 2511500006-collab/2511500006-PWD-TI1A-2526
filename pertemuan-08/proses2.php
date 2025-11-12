@@ -1,8 +1,5 @@
 <?php
 session_start();
-$sesnama = $_POST["txtNama"];
-$sesemail = $_POST["txtEmail"];
-$sespesan = $_POST["txtPesan"];
 $sesNIM = $_POST["txtNIM"];
 $sesLahir = $_POST["txtLahir"];
 $sesTanggal = $_POST["txtTanggal"];
@@ -13,10 +10,6 @@ $sesTua = $_POST["txtTua"];
 $sesKakak = $_POST["txtKakak"];
 $sesAdik = $_POST["txtAdik"];
 
-
-$_SESSION["sesnama"] = $sesnama;
-$_SESSION["sesemail"] = $sesemail;
-$_SESSION["sespesan"] = $sespesan;
 $_SESSION["sesNIM"] = $sesNIM;
 $_SESSION["sesLahir"] = $sesLahir;
 $_SESSION["sesTanggal"] = $sesTanggal;

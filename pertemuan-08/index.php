@@ -1,20 +1,18 @@
 <?php
 session_start();
-
-$sesnama = "";
-if (isset($_SESSION["sesnama"])):
-  $sesnama = $_SESSION["sesnama"];
-endif;
-
-$sesemail = "";
-if (isset($_SESSION["sesemail"])):
-  $sesemail = $_SESSION["sesemail"];
-endif;
-
-$sespesan = "";
-if (isset($_SESSION["sespesan"])):
-  $sespesan = $_SESSION["sespesan"];
-endif;
+$Nim        = $_SESSION["Nim"]        ?? "";
+$Name       = $_SESSION["Name"]       ?? "";
+$tempat     = $_SESSION["tempat"]     ?? "";
+$Lahir  = $_SESSION["Lahir"]  ?? "";
+$hobi       = $_SESSION["hobi"]       ?? "";
+$pasangan   = $_SESSION["pasangan"]   ?? "";
+$pekerjaan  = $_SESSION["pekerjaan"]  ?? "";
+$tua       = $_SESSION["tua"]       ?? "";
+$kakak      = $_SESSION["kakak"]      ?? "";
+$adik       = $_SESSION["adik"]       ?? "";
+$sesnama  = $_SESSION["sesnama"]  ?? "";
+$sesemail = $_SESSION["sesemail"] ?? "";
+$sespesan = $_SESSION["sespesan"] ?? "";
 ?>
 
 <!DOCTYPE html>

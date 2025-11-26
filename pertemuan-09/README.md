@@ -19,4 +19,6 @@
   <li>menghapus baris 130-140 karena sudah diakomodir menggunakan perulangan foreach</li>
   <li>membuat file baru dengan nama fungsi.php di folder pertemuan-09</li>
   <li>menambahkan code baru</li>
+  <li>menambahkan code untuk menghasilkan tanggal dalam format 2 digit tanggal, 3 digit nama bulan,
+dan 4 digit tahun</li>
 </ol>

@@ -16,4 +16,5 @@
   <li>menghapus baris 23-32 dan di ganti dengan code baru</li>
   <li>mengganti code di baris 19-67</li>
   <li>menambahkan code untuk menampilkan array menggunakan looping foreach</li>
+  <li>menghapus baris 130-140 karena sudah diakomodir menggunakan perulangan foreach</li>
 </ol>

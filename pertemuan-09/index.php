@@ -18,6 +18,7 @@ if (isset($_SESSION["sespesan"])):
   $sespesan = $_SESSION["sespesan"];
 endif;
 
+
 $biodata = $_SESSION["biodata"] ?? [];
 
 $fieldConfig = [
@@ -31,9 +32,12 @@ $fieldConfig = [
     "ortu" => ["label" => "Nama Orang Tua:", "suffix" => ""],
     "kakak" => ["label" => "Nama Kakak:", "suffix" => ""],
     "adik" => ["label" => "Nama Adik:", "suffix" => ""],
+    "Nama" => ["label" => "Nama:", "suffix" => ""],
+    "email" => ["label" => "Email:", "suffix" => ""],
+    "pesan" => ["label" => "Pesan:", "suffix" => ""],
 ];
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -121,8 +125,8 @@ $fieldConfig = [
 
     <section id="about">
       <h2>Tentang Saya</h2>
-      <?= tampilkanBiodata($fieldConfig, $biodata) ?>
-    </section>
+    <?= tampilkanBiodata($fieldConfig,$biodata) ?>
+</section>
 
     <section id="contact">
       <h2>Kontak Kami</h2>

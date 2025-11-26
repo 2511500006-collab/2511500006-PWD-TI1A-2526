@@ -24,4 +24,5 @@
   <li>menambahkan code untuk merender hasil atau output biodata</li>
   <li>Hapus baris 123-129 dan di ganti dengan 1 baris</li>
   <li>menambahkan code kode require_once</li>
+  <li>memodifikasi bagian contact</li> 
 </ol>

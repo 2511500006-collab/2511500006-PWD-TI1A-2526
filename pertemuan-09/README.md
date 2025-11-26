@@ -22,4 +22,5 @@
   <li>menambahkan code untuk menghasilkan tanggal dalam format
    2 digit tanggal, 3 digit nama bulan,dan 4 digit tahun</li>
   <li>menambahkan code untuk merender hasil atau output biodata</li>
+  <li>Hapus baris 123-129 dan di ganti dengan 1 baris</li>
 </ol>

@@ -13,4 +13,5 @@
   <li>echo session ke nilai label section contact selesai</li>
 
   <li>modif baris kode menjadi bentuk array associative</li>
+  <li>menghapus baris 23-32 dan di ganti dengan code baru</li>
 </ol>

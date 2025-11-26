@@ -7,3 +7,5 @@ function bersihkan($str)
 {
     return strlen(trim($str)) > 0;
 }
+
+?>

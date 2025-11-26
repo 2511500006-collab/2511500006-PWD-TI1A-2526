@@ -14,4 +14,5 @@
 
   <li>modif baris kode menjadi bentuk array associative</li>
   <li>menghapus baris 23-32 dan di ganti dengan code baru</li>
+  <li>mengganti code di baris 19-67</li> 
 </ol>

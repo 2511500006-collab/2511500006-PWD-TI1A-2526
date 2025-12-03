@@ -12,4 +12,5 @@ Hari ini, Rabu 03.Des.2025, saya mempelajari:<br>
     <li>mengisi kotak isian perintah SQL</li>
     <li>membuat file baru di pertemuan 10 dengan nama read.php</li>
     <li>memasukan codingan baru di read.php</li>
+    <li>menambahkan create atau insert record untuk tabel tbl_tamu</li>
 </ol>

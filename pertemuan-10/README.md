@@ -17,4 +17,5 @@ Hari ini, Rabu 03.Des.2025, saya mempelajari:<br>
     <li>memodifikasi codingan yg sebelumnya dengan codingan yg baru</li>
     <li>memodifikasi index.php di barisan 146</li>
     <li>menghapus barisan 133-141</li>
+    <li>export database db_pwd2025</li>
 </ol>

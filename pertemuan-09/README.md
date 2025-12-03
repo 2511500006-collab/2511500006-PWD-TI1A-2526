@@ -1,5 +1,9 @@
 # pertemuan-09
 
+NIM : 2511500006<br>
+NAMA : Grezelco Govin<br>
+Hari ini, Rabu 26.NOV.2025, saya mempelajari:<br>
+
 <ol>
   <li>Hasil UTS untuk bahan pertemuan-09</li>
   <li>Membuat form untuk biodata sederhana mahasiswa</li>

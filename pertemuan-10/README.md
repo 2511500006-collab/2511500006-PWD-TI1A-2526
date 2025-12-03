@@ -5,4 +5,6 @@ NAMA : Grezelco Govin<br>
 Hari ini, Rabu 03.Des.2025, saya mempelajari:<br>
 <ol>
     <li>mengextract zip dan di extract di file pertemuan 10</li>
+    <li>membuat file baru di pertemuan 10 dengan nama koneksi.php</li>
+    <li>mengetikan codingan di koneksi.php</li>
 </ol>

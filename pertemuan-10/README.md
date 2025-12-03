@@ -8,4 +8,5 @@ Hari ini, Rabu 03.Des.2025, saya mempelajari:<br>
     <li>membuat file baru di pertemuan 10 dengan nama koneksi.php</li>
     <li>mengetikan codingan di koneksi.php</li>
     <li>pemasangan PHPMyAdmin di laragon</Li> 
+    <li>mengisi database dengan nama db_pwd2025</li>
 </ol>

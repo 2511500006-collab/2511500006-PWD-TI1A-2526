@@ -9,4 +9,5 @@ Hari ini, Rabu 03.Des.2025, saya mempelajari:<br>
     <li>mengetikan codingan di koneksi.php</li>
     <li>pemasangan PHPMyAdmin di laragon</Li> 
     <li>mengisi database dengan nama db_pwd2025</li>
+    <li>mengisi kotak isian perintah SQL</li>
 </ol>

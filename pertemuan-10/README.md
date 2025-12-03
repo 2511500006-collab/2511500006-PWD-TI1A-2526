@@ -14,4 +14,5 @@ Hari ini, Rabu 03.Des.2025, saya mempelajari:<br>
     <li>memasukan codingan baru di read.php</li>
     <li>menambahkan create atau insert record untuk tabel tbl_tamu</li>
     <li>Duplikat file read.php, dan hasil duplikat rename menjadi read_inc.php</li>
+    <li>memodifikasi codingan yg sebelumnya dengan codingan yg baru</li>
 </ol>

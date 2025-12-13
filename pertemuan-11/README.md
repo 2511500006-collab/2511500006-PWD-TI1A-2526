@@ -10,5 +10,6 @@ Hari ini, Rabu 03.Des.2025, saya mempelajari:<br>
    <li>menampilan flash message</li>
    <li>menampilkan nilai lama dari form untuk antisipasi jika ada eror</li>
    <li>REQUEST_METHOD apakah menggunakan 'POST'</li>
-   <li>Ambil data $_POST, trim, htmlspecialchars</li>
+   <li>ambil data $_POST, trim, htmlspecialchars</li>
+   <li>mengisi bagian validasi</li>
 </ol>

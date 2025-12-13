@@ -7,4 +7,5 @@ Hari ini, Rabu 03.Des.2025, saya mempelajari:<br>
         <li>fungsi.php untuk helper redirect sederhana (pola PRG)</li>
         <li>menggunakan method=post dan action=proses.php</li>
         <li>menambahkan penangkap pesan sukses/gagal</li>
+        <li>menampilan flash message</li>
 </ol>

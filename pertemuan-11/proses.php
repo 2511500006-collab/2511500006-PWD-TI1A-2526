@@ -1,42 +1,49 @@
 <?php
 session_start();
-require __DIR__ . './koneksi.php';
+require_once __DIR__ . '/koneksi.php';
 require_once __DIR__ . '/fungsi.php';
 
-#cek method form, hanya izinkan POST
+# Hanya menerima Request POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     $_SESSION['flash_error'] = 'Akses tidak valid.';
     redirect_ke('index.php#contact');
 }
 
-#ambil dan bersihkan nilai dari form
-$nama  = bersihkan($_POST['txtNama'] ?? '');
+# Cek koneksi database
+if (!$conn) {
+    $_SESSION['flash_error'] = 'Koneksi database gagal.';
+    redirect_ke('index.php#contact');
+}
+
+# Ambil dan bersihkan input
+$nama  = bersihkan($_POST['txtNama']  ?? '');
 $email = bersihkan($_POST['txtEmail'] ?? '');
 $pesan = bersihkan($_POST['txtPesan'] ?? '');
 
-#validasi sederhana
-$errors = []; // ini Array untuk menampung semua error yang ada
-
+# Nama wajib & minimal 3 karakter
 if ($nama === '') {
     $errors[] = 'Nama wajib diisi.';
+} elseif (strlen($nama) < 3) {
+    $errors[] = 'Nama minimal 3 karakter.';
 }
 
+# Email valid
 if ($email === '') {
     $errors[] = 'Email wajib diisi.';
 } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    $errors[] = 'Format e-mail tidak valid.';
+    $errors[] = 'Format email tidak valid.';
 }
 
+# Pesan wajib & minimal 10 karakter
 if ($pesan === '') {
     $errors[] = 'Pesan wajib diisi.';
+} elseif (strlen($pesan) < 10) {
+    $errors[] = 'Pesan minimal 10 karakter.';
 }
 
-/*
-kondisi di bawah ini hanya di kerjakan jika ada eror,
-simpan nilai lama dan pesan eror , lalu redirect
-(konsep PRG)
-*/
+# Jika ada error → kembali ke form
 if (!empty($errors)) {
+
     $_SESSION['old'] = [
         'nama'  => $nama,
         'email' => $email,
@@ -45,15 +52,38 @@ if (!empty($errors)) {
 
     $_SESSION['flash_error'] = implode('<br>', $errors);
     redirect_ke('index.php#contact');
+    exit;
 }
 
+# Query INSERT (prepared statement)
+$sql = "INSERT INTO tbl_tamu (cnama, cemail, cpesan) VALUES (?, ?, ?)";
+$stmt = mysqli_prepare($conn, $sql);
 
-$arrContact = [
-  "nama" => $_POST["txtNama"] ?? "",
-  "email" => $_POST["txtEmail"] ?? "",
-  "pesan" => $_POST["txtPesan"] ?? ""
-];
-$_SESSION["contact"] = $arrContact;
+if (!$stmt) {
+    $_SESSION['flash_error'] = 'Terjadi kesalahan sistem (prepare gagal).';
+    mysqli_close($conn);   // <- WAJIB ditutup
+    redirect_ke('index.php#Contact');
+}
+
+mysqli_stmt_bind_param($stmt, 'sss', $nama, $email, $pesan);
+
+# Eksekusi query
+if (mysqli_stmt_execute($stmt)) {
+    unset($_SESSION['old']);
+    $_SESSION['flash_sukses'] = 'Terima kasih, data Anda sudah tersimpan.';
+    redirect_ke('index.php#Contact');
+} else {
+    $_SESSION['old'] = [
+        'nama'  => $nama,
+        'email' => $email,
+        'pesan' => $pesan,
+    ];
+
+    $_SESSION['flash_error'] = 'Data gagal disimpan. Silakan coba lagi.';
+    redirect_ke('index.php#Contact');
+}
+ #tutup statement 
+mysqli_stmt_close($stmt);
 
 $arrBiodata = [
   "nim" => $_POST["txtNim"] ?? "",

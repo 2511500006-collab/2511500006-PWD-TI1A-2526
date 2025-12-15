@@ -12,4 +12,5 @@ Hari ini, Rabu 03.Des.2025, saya mempelajari:<br>
    <li>REQUEST_METHOD apakah menggunakan 'POST'</li>
    <li>ambil data $_POST, trim, htmlspecialchars</li>
    <li>mengisi bagian validasi</li>
+   <li>menambahkan kolom nomor urut (bukan ID) pada read.php di kolom pertama</li>
 </ol>

@@ -9,4 +9,5 @@ Hari ini, Rabu 24.Des.2025, saya mempelajari:<br>
    <li>mengcopy semua code di file proses_update.php ke proses_delete.php</li>
    <li>menghapus dan mengganti codingan yg ada di delete_proses.php</li>
    <li>menambahkan parameter cid untuk link delete di read.php</li>
-</ol>
+   <li>memperbaiki file proses_delete.php agar menggunakan parameter cid</li>
+   </ol>

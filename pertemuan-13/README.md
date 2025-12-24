@@ -11,4 +11,5 @@ Hari ini, Rabu 24.Des.2025, saya mempelajari:<br>
    <li>menambahkan parameter cid untuk link delete di read.php</li>
    <li>memperbaiki file proses_delete.php agar menggunakan parameter cid</li>
    <li>menambahkan konfirmasi penghapusan di read.php untuk link delete</li>
+   <li>mengganti bagian konfirmasi penghapusan menjadi nama pengguna</li>
 </ol>

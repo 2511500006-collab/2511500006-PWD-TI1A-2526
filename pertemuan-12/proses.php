@@ -39,6 +39,7 @@ if ($pesan === '') {
     $errors[] = 'Pesan wajib diisi.';
 } elseif (strlen($pesan) < 10) {
     $errors[] = 'Pesan minimal 10 karakter.';
+
 }
 
 # Jika ada error → kembali ke form

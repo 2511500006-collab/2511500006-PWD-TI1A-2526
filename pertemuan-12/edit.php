@@ -3,9 +3,9 @@ session_start();
 require 'koneksi.php';
 require 'fungsi.php';
 
-/*
-Ambil nilai cid dari GET dan lakukan validasi
-*/
+/* =========================
+   Validasi CID dari GET
+   ========================= */
 $cid = filter_input(INPUT_GET, 'cid', FILTER_VALIDATE_INT, [
     'options' => ['min_range' => 1]
 ]);
@@ -13,14 +13,15 @@ $cid = filter_input(INPUT_GET, 'cid', FILTER_VALIDATE_INT, [
 if (!$cid) {
     $_SESSION['flash_error'] = 'Akses tidak valid.';
     redirect_ke('read.php');
+    exit;
 }
 
-/*
-Ambil data tamu dari DB
-*/
+/* =========================
+   Ambil data tamu
+   ========================= */
 $stmt = mysqli_prepare(
     $conn,
-    "SELECT cid, cnama, cemail, cpesan
+    "SELECT cnama, cemail, cpesan
      FROM tbl_tamu
      WHERE cid = ?"
 );
@@ -28,6 +29,7 @@ $stmt = mysqli_prepare(
 if (!$stmt) {
     $_SESSION['flash_error'] = 'Query tidak benar.';
     redirect_ke('read.php');
+    exit;
 }
 
 mysqli_stmt_bind_param($stmt, "i", $cid);
@@ -39,20 +41,22 @@ mysqli_stmt_close($stmt);
 if (!$row) {
     $_SESSION['flash_error'] = 'Record tidak ditemukan.';
     redirect_ke('read.php');
+    exit;
 }
 
-/* Prefill form */
-$nama  = $row['cnama'] ?? '';
-$email = $row['cemail'] ?? '';
-$pesan = $row['cpesan'] ?? '';
+/* =========================
+   Prefill data
+   ========================= */
+$nama  = $row['cnama'];
+$email = $row['cemail'];
+$pesan = $row['cpesan'];
 
-/* Flash error */
 $flash_error = $_SESSION['flash_error'] ?? '';
 $old = $_SESSION['old'] ?? [];
 
 unset($_SESSION['flash_error'], $_SESSION['old']);
 
-if (!empty($old)) {
+if ($old) {
     $nama  = $old['nama']  ?? $nama;
     $email = $old['email'] ?? $email;
     $pesan = $old['pesan'] ?? $pesan;
@@ -85,35 +89,39 @@ if (!empty($old)) {
 <section id="contact">
     <h2>Edit Buku Tamu</h2>
 
-    <?php if (!empty($flash_error)) : ?>
+    <?php if ($flash_error): ?>
         <div style="padding:10px; margin-bottom:10px;
         background:#f8d7da; color:#721c24; border-radius:6px;">
             <?= htmlspecialchars($flash_error); ?>
         </div>
     <?php endif; ?>
 
-    <form action="proses.php" method="POST">
+    <form action="proses_update.php" method="POST">
 
-        <label for="txtNama"><span>Nama:</span>
-          <input type="text" id="txtNama" name="txtNama"
-                 placeholder="Masukkan nama" required autocomplete="name"
-                 value="<?= $old['nama'] ?? '' ?>">
+        <!-- WAJIB: kirim CID -->
+     <input type="text" name="cid" value="<?= (int)$cid; ?>">
+
+        <label>
+            <span>Nama:</span>
+            <input type="text" name="txtNama" required autocomplete="name"
+                   value="<?= htmlspecialchars($nama); ?>">
         </label>
 
-        <label for="txtEmail"><span>Email:</span>
-        <input type="email" id="txtEmail" name="txtEmail"
-        placeholder="Masukkan email" required autocomplete="email"
-        value="<?= $old['email'] ?? '' ?>">
+        <label>
+            <span>Email:</span>
+            <input type="email" name="txtEmail" required autocomplete="email"
+        value="<?= htmlspecialchars($email); ?>">
         </label>
 
-        <label for="txtPesan"><span>Pesan Anda:</span>
-        <textarea id="txtPesan" name="txtPesan" rows="4"
-         placeholder="Tulis pesan anda..." required><?= $old['pesan'] ?? '' ?></textarea>
-        <small id="charCount">0/200 karakter</small>
+        <label>
+            <span>Pesan Anda:</span>
+            <textarea name="txtPesan" rows="4" required><?= htmlspecialchars($pesan); ?></textarea>
+            <small id="charCount"><?= strlen($pesan); ?>/200 karakter</small>
         </label>
 
-        <label for="txtCaptcha">Captcha 2 x 3 = ?</label>
-        <input type="number" id="txtCaptcha" name="txtCaptcha" required>
+        <label>
+            <span>Captcha 2 × 3 = ?</span>
+            <input type="number" name="txtCaptcha" required>
         </label>
 
         <button type="submit">Kirim</button>

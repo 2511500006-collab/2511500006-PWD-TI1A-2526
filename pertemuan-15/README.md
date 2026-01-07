@@ -8,4 +8,6 @@ Hari ini, Rabu 7.Jan.2026, saya mempelajari:<br>
    <li>Membuat CREATE TABLE di phpmyadmin</li>
    <li>Membuat file baru "proses_data.php"<li>
    <li>membuat file read_data.php untuk menampilkan data yg dikirim</li>
+   <li>menambahkan file untuk delete</li>
+   <li>bikin file untuk proses_update.php</li>
 </ol>

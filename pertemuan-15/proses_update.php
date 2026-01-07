@@ -78,7 +78,7 @@
     menyiapkan query UPDATE dengan prepared statement 
     (WAJIB WHERE cid = ?)
   */
-  $stmt = mysqli_prepare($conn, "UPDATE tbl_tamu 
+  $stmt = mysqli_prepare($conn, "UPDATE tbl_mahasiswa
                                 SET cnama = ?, cemail = ?, cpesan = ? 
                                 WHERE cid = ?");
   if (!$stmt) {

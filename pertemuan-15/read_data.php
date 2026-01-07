@@ -3,7 +3,7 @@ session_start();
 require 'koneksi.php';
 require 'fungsi.php';
 
-$sql = "SELECT * FROM tbl_mahasiswa ORDER BY cmid DESC";
+$sql = "SELECT * FROM tbl_data ORDER BY cmid DESC";
 $q = mysqli_query($conn, $sql);
 if (!$q) {
     die("Query error: " . mysqli_error($conn));
@@ -143,8 +143,8 @@ unset($_SESSION['flash_sukses_mhs'], $_SESSION['flash_error_mhs']);
                         <tr>
                             <td><?= $i++; ?></td>
                             <td class="aksi-btn">
-                                <a href="edit_mahasiswa.php?cmid=<?= (int)$row['cmid']; ?>" class="btn-edit">Edit</a>
-                                <a href="neger.php?cmid=<?= (int)$row['cmid']; ?>" 
+                                <a href="edit_data.php?cmid=<?= (int)$row['cmid']; ?>" class="btn-edit">Edit</a>
+                                <a href="delete_data.php?cmid=<?= (int)$row['cmid']; ?>" 
                                    class="btn-hapus" 
                                    onclick="return confirm('Hapus data <?= htmlspecialchars($row['cnama']); ?> (NIM: <?= htmlspecialchars($row['cnim']); ?>)?')">
                                     Hapus

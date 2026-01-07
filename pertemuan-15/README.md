@@ -5,4 +5,5 @@ NAMA : Grezelco Govin<br>
 Hari ini, Rabu 7.Jan.2026, saya mempelajari:<br>
 <ol>
    <li>Membuat CREATE TABLE di phpmyadmin</li>
+   <li>Membuat file baru "proses_data.php"<li>
 </ol>

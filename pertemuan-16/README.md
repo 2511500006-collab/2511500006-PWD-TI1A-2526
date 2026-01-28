@@ -5,4 +5,5 @@ NAMA : Grezelco Govin<br>
 Hari ini, Rabu 28.Jan.2026, saya mengerjakan UAS<br>
 <ol>
     <li>mengestrak file dari bahan UAS ke pertemuan 16</li>
+    <li>menambahkan tabel baru untuk menampung record</li>
 </ol>

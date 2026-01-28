@@ -39,47 +39,47 @@ require_once __DIR__ . '/fungsi.php';
     </section>
 
     <section id="biodata">
-      <h2>Biodata Sederhana Mahasiswa</h2>
-      <form action="proses_data.php" method="POST">
+      <h2>Biodata Dosen</h2>
+      <form action="proses_bio.php" method="POST">
 
-        <label for="txtNim"><span>NIM:</span>
-          <input type="text" id="txtNim" name="txtNim" placeholder="Masukkan NIM" required>
+        <label for="txtKodeDos"><span>Kode Dosen:</span>
+          <input type="text" id="txtKodeDos" name="txtKodeDos" placeholder="Masukkan Kode Dosen" required>
         </label>
 
-        <label for="txtNmLengkap"><span>Nama Lengkap:</span>
-          <input type="text" id="txtNmLengkap" name="txtNmLengkap" placeholder="Masukkan Nama Lengkap" required>
+        <label for="txtNmDosen"><span>Nama Dosen:</span>
+          <input type="text" id="txtNmDosen" name="txtNmDosen" placeholder="Masukkan Nama Dosen" required>
         </label>
 
-        <label for="txtT4Lhr"><span>Tempat Lahir:</span>
-          <input type="text" id="txtT4Lhr" name="txtT4Lhr" placeholder="Masukkan Tempat Lahir" required>
+        <label for="txtAlRmh"><span>Alamat Rumah:</span>
+          <input type="text" id="txtAlRmh" name="txtAlRmh" placeholder="Masukkan Alamat Rumah" required>
         </label>
 
-        <label for="txtTglLhr"><span>Tanggal Lahir:</span>
-          <input type="text" id="txtTglLhr" name="txtTglLhr" placeholder="Masukkan Tanggal Lahir" required>
+        <label for="txtTglDosen"><span>Tanggal Jadi Dosen:</span>
+          <input type="text" id="txtTglDosen" name="txtTglDosen" placeholder="Masukkan Tanggal Jadi Dosen" required>
         </label>
 
-        <label for="txtHobi"><span>Hobi:</span>
-          <input type="text" id="txtHobi" name="txtHobi" placeholder="Masukkan Hobi" required>
+        <label for="txtJJA"><span>JJA Dosen:</span>
+          <input type="text" id="txtJJA" name="txtJJA" placeholder="Masukkan JJA Dosen" required>
         </label>
 
-        <label for="txtPasangan"><span>Pasangan:</span>
-          <input type="text" id="txtPasangan" name="txtPasangan" placeholder="Masukkan Pasangan" required>
+        <label for="txtProdi"><span>Homebase Prodi:</span>
+          <input type="text" id="txtProdi" name="txtProdi" placeholder="Masukkan Homebase Prodi" required>
         </label>
 
-        <label for="txtKerja"><span>Pekerjaan:</span>
-          <input type="text" id="txtKerja" name="txtKerja" placeholder="Masukkan Pekerjaan" required>
+        <label for="txtNoHP"><span>Nomor HP:</span>
+          <input type="text" id="txtNoHP" name="txtNoHP" placeholder="Masukkan Nomor HP" required>
         </label>
 
-        <label for="txtNmOrtu"><span>Nama Orang Tua:</span>
-          <input type="text" id="txtNmOrtu" name="txtNmOrtu" placeholder="Masukkan Nama Orang Tua" required>
+        <label for="txNamaPasangan"><span>Nama Pasangan:</span>
+          <input type="text" id="txNamaPasangan" name="txNamaPasangan" placeholder="Masukkan Nama Pasangan" required>
         </label>
 
-        <label for="txtNmKakak"><span>Nama Kakak:</span>
-          <input type="text" id="txtNmKakak" name="txtNmKakak" placeholder="Masukkan Nama Kakak" required>
+        <label for="txtNmAnak"><span>Nama Anak:</span>
+          <input type="text" id="txtNmAnak" name="txtNmAnak" placeholder="Masukkan Nama Anak" required>
         </label>
 
-        <label for="txtNmAdik"><span>Nama Adik:</span>
-          <input type="text" id="txtNmAdik" name="txtNmAdik" placeholder="Masukkan Nama Adik" required>
+        <label for="txtBidangIlmu"><span>Bidang Ilmu Dosen:</span>
+          <input type="text" id="txtBidangIlmu" name="txtBidangIlmu" placeholder="Masukkan Bidang Ilmu Dosen" required>
         </label>
 
         <button type="submit">Kirim</button>
@@ -91,16 +91,16 @@ require_once __DIR__ . '/fungsi.php';
     $biodata = $_SESSION["biodata"] ?? [];
 
     $fieldConfig = [
-      "nim" => ["label" => "NIM:", "suffix" => ""],
-      "nama" => ["label" => "Nama Lengkap:", "suffix" => " &#128526;"],
-      "tempat" => ["label" => "Tempat Lahir:", "suffix" => ""],
-      "tanggal" => ["label" => "Tanggal Lahir:", "suffix" => ""],
-      "hobi" => ["label" => "Hobi:", "suffix" => " &#127926;"],
-      "pasangan" => ["label" => "Pasangan:", "suffix" => " &hearts;"],
-      "pekerjaan" => ["label" => "Pekerjaan:", "suffix" => " &copy; 2025"],
-      "ortu" => ["label" => "Nama Orang Tua:", "suffix" => ""],
-      "kakak" => ["label" => "Nama Kakak:", "suffix" => ""],
-      "adik" => ["label" => "Nama Adik:", "suffix" => ""],
+      "kodedos" => ["label" => "Kode Dosen:", "suffix" => ""],
+      "nama" => ["label" => "Nama Dosen:", "suffix" => " &#128526;"],
+      "alamat" => ["label" => "Alamat Rumah:", "suffix" => ""],
+      "tanggal" => ["label" => "Tanggal Jadi Dosen:", "suffix" => ""],
+      "jja" => ["label" => "JJA Dosen:", "suffix" => " &#127926;"],
+      "prodi" => ["label" => "Homebase Prodi:", "suffix" => " &hearts;"],
+      "nohp" => ["label" => "Nomor HP:", "suffix" => " &copy; 2025"],
+      "pasangan" => ["label" => "Nama Pasangan:", "suffix" => ""],
+      "anak" => ["label" => "Nama Anak:", "suffix" => ""],
+      "ilmu" => ["label" => "Bidang Ilmu Dosen:", "suffix" => ""],
     ];
     ?>
 

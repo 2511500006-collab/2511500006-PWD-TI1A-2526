@@ -7,4 +7,5 @@ Hari ini, Rabu 28.Jan.2026, saya mengerjakan UAS<br>
     <li>mengestrak file dari bahan UAS ke pertemuan 16</li>
     <li>menambahkan tabel baru untuk menampung record</li>
     <li>mengganti isi biodata mahasiswa menjadi biodata dosen</li>
+    <li>membuat file proses_dosen.php</li>
 </ol>

@@ -59,7 +59,7 @@ require_once __DIR__ . '/fungsi.php';
 
         <label>
             <span>Tanggal Jadi Dosen:</span>
-            <input type="date" name="tgl_jadi_dosen">
+            <input type="text" name="tgl_jadi_dosen" placeholder="Masukkan tanggal jadi dosen">
         </label>
 
         <label>
@@ -96,6 +96,7 @@ require_once __DIR__ . '/fungsi.php';
         <div style="margin-top: 20px; text-align: center;">
         <a href="read_dosen.php" style="color: #003366; font-weight: bold;">Lihat Daftar Dosen</a>
         </div>
+        
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
       </form>

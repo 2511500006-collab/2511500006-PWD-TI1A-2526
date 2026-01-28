@@ -10,4 +10,5 @@ Hari ini, Rabu 28.Jan.2026, saya mengerjakan UAS<br>
     <li>membuat file proses_dosen.php</li>
     <li>membuat read_dosen.php untuk menampilkan daftar data yang sudah tersimpan di database</li>
     <li>membuat file baru dengan nama edit_dosen.php untuk mengganti atau mengedit data</li>
+    <li>membuat file update_dosen.php untuk menerima data dari from edit</li>
 </ol>

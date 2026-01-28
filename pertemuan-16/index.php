@@ -38,50 +38,64 @@ require_once __DIR__ . '/fungsi.php';
       <p>Ini contoh paragraf HTML.</p>
     </section>
 
-    <section id="biodata">
-      <h2>Biodata Dosen</h2>
-      <form action="proses_bio.php" method="POST">
-
-        <label for="txtKodeDos"><span>Kode Dosen:</span>
-          <input type="text" id="txtKodeDos" name="txtKodeDos" placeholder="Masukkan Kode Dosen" required>
+<section id="biodata">
+    <h2>Input Biodata Dosen</h2>
+    <form action="proses_dosen.php" method="POST">
+        
+        <label>
+            <span>Kode Dosen:</span>
+            <input type="text" name="kode_dosen" placeholder="Masukkan Kode Dosen" required>
         </label>
 
-        <label for="txtNmDosen"><span>Nama Dosen:</span>
-          <input type="text" id="txtNmDosen" name="txtNmDosen" placeholder="Masukkan Nama Dosen" required>
+        <label>
+            <span>Nama Dosen:</span>
+            <input type="text" name="nama_dosen" placeholder="Masukkan Nama Anda" required>
         </label>
 
-        <label for="txtAlRmh"><span>Alamat Rumah:</span>
-          <input type="text" id="txtAlRmh" name="txtAlRmh" placeholder="Masukkan Alamat Rumah" required>
+        <label>
+            <span>Alamat Rumah:</span>
+            <input type="text" name="alamat_rumah" placeholder="Masukkan Alamat Rumah">
         </label>
 
-        <label for="txtTglDosen"><span>Tanggal Jadi Dosen:</span>
-          <input type="text" id="txtTglDosen" name="txtTglDosen" placeholder="Masukkan Tanggal Jadi Dosen" required>
+        <label>
+            <span>Tanggal Jadi Dosen:</span>
+            <input type="date" name="tgl_jadi_dosen">
         </label>
 
-        <label for="txtJJA"><span>JJA Dosen:</span>
-          <input type="text" id="txtJJA" name="txtJJA" placeholder="Masukkan JJA Dosen" required>
+        <label>
+            <span>JJA Dosen:</span>
+            <input type="text" name="jja_dosen" placeholder="Contoh: Masukan jja dosen">
         </label>
 
-        <label for="txtProdi"><span>Homebase Prodi:</span>
-          <input type="text" id="txtProdi" name="txtProdi" placeholder="Masukkan Homebase Prodi" required>
+        <label>
+            <span>Homebase Prodi:</span>
+            <input type="text" name="homebase_prodi" placeholder="Contoh: Teknik Informatika">
         </label>
 
-        <label for="txtNoHP"><span>Nomor HP:</span>
-          <input type="text" id="txtNoHP" name="txtNoHP" placeholder="Masukkan Nomor HP" required>
+        <label>
+            <span>Nomor HP:</span>
+            <input type="text" name="no_hp" placeholder="Contoh: 08123456789">
         </label>
 
-        <label for="txNamaPasangan"><span>Nama Pasangan:</span>
-          <input type="text" id="txNamaPasangan" name="txNamaPasangan" placeholder="Masukkan Nama Pasangan" required>
+        <label>
+            <span>Nama Pasangan:</span>
+            <input type="text" name="nama_pasangan" placeholder="Masukkan Nama Pasangan">
         </label>
 
-        <label for="txtNmAnak"><span>Nama Anak:</span>
-          <input type="text" id="txtNmAnak" name="txtNmAnak" placeholder="Masukkan Nama Anak" required>
+        <label>
+            <span>Nama Anak:</span>
+            <input type="text" name="nama_anak" placeholder="Masukkan Nama Anak">
         </label>
 
-        <label for="txtBidangIlmu"><span>Bidang Ilmu Dosen:</span>
-          <input type="text" id="txtBidangIlmu" name="txtBidangIlmu" placeholder="Masukkan Bidang Ilmu Dosen" required>
+        <label>
+            <span>Bidang Ilmu Dosen:</span>
+            <input type="text" name="bidang_ilmu" placeholder="Contoh: Pengantar Teknik Informatika">
         </label>
 
+      </form>
+        <div style="margin-top: 20px; text-align: center;">
+        <a href="read_dosen.php" style="color: #003366; font-weight: bold;">Lihat Daftar Dosen</a>
+        </div>
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
       </form>

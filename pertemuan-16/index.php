@@ -92,11 +92,10 @@ require_once __DIR__ . '/fungsi.php';
             <input type="text" name="bidang_ilmu" placeholder="Contoh: Pengantar Teknik Informatika">
         </label>
 
-      </form>
         <div style="margin-top: 20px; text-align: center;">
         <a href="read_dosen.php" style="color: #003366; font-weight: bold;">Lihat Daftar Dosen</a>
         </div>
-        
+
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
       </form>

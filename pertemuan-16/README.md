@@ -8,4 +8,6 @@ Hari ini, Rabu 28.Jan.2026, saya mengerjakan UAS<br>
     <li>menambahkan tabel baru untuk menampung record</li>
     <li>mengganti isi biodata mahasiswa menjadi biodata dosen</li>
     <li>membuat file proses_dosen.php</li>
+    <li>membuat read_dosen.php untuk menampilkan daftar data yang sudah tersimpan di database</li>
+    <li>membuat file baru dengan nama edit_dosen.php untuk mengganti atau mengedit data</li>
 </ol>
